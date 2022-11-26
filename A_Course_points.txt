@@ -1,0 +1,160 @@
+-> Objective
+   - This course should help to create solid foundation for language.
+
+-> Productivity vs Performance
+   - Ans: Productivity. Easy to work with.
+
+-> Why Python?
+   -> Easy to learn
+      - One can get started with scripting in approx 2-3 hours.
+   -> Framework/Libraries (Batteries included.)
+      - web development : django, flask, pyramid.....
+      - datascience/ml : numpy, pandas, matplotlib, plotly, scipy, scikit....
+      - blockchain
+      - cloud (e.g.: boto3 for aws)
+      - sysadm (e.g.: os)
+   -> Other places
+      - AWS Lambda
+      - Google cloud dataflow and datalab
+      ....
+
+-> python interpreter i.e. cpython is written in c.
+   There are other interpreter like jython which is written in java.
+   Default installation is cpython.
+
+-> Test programs (Series B)
+
+-> Memory | CPU | Storage
+   - Memory access(Pointers): Sharing of address in C++/GO..
+   - For any new value (with/without help of expresssions) there is new object.
+   C_memory.py
+
+-> All reserved word are alphabet and except 3 all lower case(True,False,None)
+  - import keyword
+    keyword.kwlist
+
+-> REPL (Read, Evaluate, Print, Loop) + File extention is .py
+   + Atom + Jupyter Notebook(mac: jupyter notebook) + Pycharm + Anaconda.Spyder
+   + ipython
+
+-> Tag line
+   - Python ::: Everything is object..
+     $$$ (DataType)Variable vs (Class)Instance Variable $$$
+          +
+     $$$ Demo of everything is object(include functions) $$$
+     D_everything_object.py
+
+-> Why OOP?
+   (e.g.: str functions)
+
+-> Value base object creation in python
+   - New value == Create New Object
+     e.g.: x = 5000; id(x); x = x + 1; id(x)
+   - Existing value assignment
+     - case 1)  Both values will be stored in new memory.
+         x = 5000; id(x)
+         y = 5000; id(y)
+     - case 2) Both variables will be pointing to one address where value stored.
+         x = 5000; id(x)
+         y = x; id(y)
+
+-> dir, help, type, id, globals, _, dir(__builtins__)
+   for b in dir(__builtins__):
+       print(b)
+
+-> Maths: 1123232 ** 121, 1123232 ** 1214, Check E_TestPower.java
+   ctrl+l to clear screen
+
+*****************************************************************************
+   @@@@ Importance of Data-Type/Data-Structure(Class) in any language @@@@
+*****************************************************************************
+
+-> Type system (type.py)
+   - Declare ..OR.. Duck typing
+   - Manipulate
+   - Comprehension
+   - sys.argv, input always string, eval, print with sep, end (F_arg.py)
+   *** No constants as there are no variables. ***
+       - Everything is object.
+
+-> import this (about whitespace/tab and code style)
+
+-> Operator("IN", "NOT IN", "IS", "IS NOT"),
+   a/b vs a//b, (*,+,-,** not required)
+   swap references of instance variable to swap values
+   e.g.: a=3;b=2;a,b=b,a;print(a,b)
+   and, or, not (a=3;b=2; a==3 and b==2; a==3 or b==20 ;
+                 not(a==3 or b==20) ; not a==3 or b==20)
+   ternary operator :: max = a if a > b else b
+   NOT REQUIRED: (bitwise operator: Applicable to int/bool:: &, |, ^, ~)
+   a=5, b=6, bin(a), bin(b), a|b, a&b, a^b, ~a
+
+-> Control-flow(if) (G_control_flow.py)
+   if-elif-elif-else,
+
+-> Loop
+   for, while, break, continue
+
+-> Other (H_Docstring.py)
+   pass, del, docstring (setter, getter)
+   del: x =5; del x; print(x) # will give error as expected.
+
+-> Functions(Normal, Multi-value return, Variable Args,
+             Scope of variable + globals(),
+             Function as arguments,
+             Iterator, Decorators, Generators, closures not working)
+   - Not everything is covered about positioning, that can be learn with little efforts.
+   - I_func.py
+
+-> Class
+   - Files: J_test_class*.py
+   *** gc methods are not covered. ***
+       - import gc
+       - gc.isenabled()
+
+-> Packaging/Modules (explain main vs other modules and class)
+   - Modules: K_mainmodule.py
+
+-> File operations
+   (Binary not covered.)
+   File: L_test_file.py
+
+-> try/except/else/finally
+   - Exception: M_predefine_exception.py, M_userdefine_exception.py
+
+-> Logging
+     - Log required info to file.
+     File: N_Logging.py
+     Levels: -
+      CRITICAL:50(Attend it),
+      ERROR:40(Something wrong, fix it),
+      WARNING:30(Alert for dev),
+      INFO:20(Info),
+      DEBUG:10(Troubleshooting help),
+      NOTSET: 0
+
+-> Debug (assert + pdb)
+   File: O_test_assert.py, P_wrong.py
+
+-> Module
+   File: Q_module.py
+
+-> __pycache__
+The python interpreter compiles the *.py script file and saves the results of the
+compilation to the __pycache__ directory. When the project is executed again, if the
+interpreter identifies that the *.py script has not been modified, it skips the compile
+step and runs the previously generated *.pyc file stored in the __pycache__ folder.
+When the project is complex, you can make the preparation time before the project is
+run shorter. If the program is too small, you can ignore that by using python -B abc.py
+with the B option.
+
+-> Test (pytest)
+   - NA
+
+-> Regular Expression (re)
+   - NA
+
+-> Where to go from here...
+   - Practice, Practice, Practice
+   - Book
+      - Author: Aaron Maxwell (condition apply)
